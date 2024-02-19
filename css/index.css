@@ -114,11 +114,9 @@
     background-color: var(--grøn);
     color: var(--beige);
   }
-
-  footer {
-    margin-top: 100px;
-  }
 }
+
+/* ________________________________desktop______________________________ */
 
 @media only screen and (max-width: 800px) {
   .forside {
@@ -226,9 +224,5 @@
     border: 2px solid var(--beige);
     background-color: var(--grøn);
     color: var(--beige);
-  }
-
-  footer {
-    margin-top: 100px;
   }
 }
