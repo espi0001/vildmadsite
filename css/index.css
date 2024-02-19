@@ -1,61 +1,216 @@
-/* ___________________________ Ester INDEX ___________________________ */
-section .forside {
+/* ________________________________desktop______________________________ */
+
+@media only screen and (min-width: 800px) {
+  .forside {
+    background-image: url(/image/vandnært.svg);
+    aspect-ratio: 523.65/513.39;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+  }
+
+  .overskrift1 {
+    position: relative;
+    z-index: 99;
+    margin: auto;
+    width: 50%;
+    top: 50%;
+    text-align: center;
+    color: var(--beige);
+    border: solid 4px var(--beige);
+    text-transform: uppercase;
+    font-size: 4rem;
+  }
+
+  /* kategorier */
+  .kategorier {
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .kategorier_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    grid-gap: 10px;
+    margin: 30px 0 0 0;
+  }
+
+  .openland_child {
+    background-image: url(/image/aaben_landskab.svg);
+    background-repeat: no-repeat;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    position: relative;
+    aspect-ratio: 1920/1080;
+  }
+
+  .forrest_child {
+    background-image: url(/image/skov.svg);
+    background-repeat: no-repeat;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    position: relative;
+    aspect-ratio: 1920/1080;
+  }
+
+  .ramme1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1920/1080;
+  }
+
+  .ramme2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1920/1080;
+  }
+
+  .titel1 {
+    position: absolute;
+    z-index: 1000;
+    margin: auto;
+    width: 40%;
+    top: 40%;
+    left: 30%;
+    text-align: center;
+    color: var(--beige);
+    border: solid 4px var(--beige);
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+
+  .titel2 {
+    position: absolute;
+    z-index: 1000;
+    margin: auto;
+    width: 40%;
+    top: 40%;
+    left: 30%;
+    text-align: center;
+    color: var(--beige);
+    border: solid 4px var(--beige);
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+
+  .link-button {
+    margin-top: 40px;
+    display: inline-block;
+    padding: 3px 15px;
+    color: var(--brun);
+    border: 2px solid var(--brun);
+    text-decoration: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .link-button:hover {
+    border: 2px solid var(--beige);
+    background-color: var(--grøn);
+    color: var(--beige);
+  }
+
+  footer {
+    margin-top: 100px;
+  }
+}
+/* 
+.forside {
+  background-image: url(/image/vandnært.svg);
+  aspect-ratio: 523.65/513.39;
+  width: 100%;
+  object-fit: cover;
   margin-bottom: 30px;
+  background-repeat: no-repeat;
 }
 
-.forside_billede {
-  width: 100%;
-  aspect-ratio: 22/9;
-  object-fit: cover;
-}
 .overskrift1 {
-  position: absolute;
-  z-index: 101;
+  position: relative;
+  z-index: 99;
+  margin: auto;
+  width: 50%;
+  top: 50%;
   text-align: center;
   color: var(--beige);
   border: solid 4px var(--beige);
   text-transform: uppercase;
-  margin: -110px 0 0 140px;
+  font-size: 2rem;
 }
 
-/* kategorier */
+
 .kategorier {
-  display: block;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
 }
 
-.openland {
-  margin-bottom: 20px;
+.openland_child {
+  background-image: url(/image/aaben_landskab.svg);
+  background-repeat: no-repeat;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  position: relative;
+  aspect-ratio: 1920/1080;
+  margin-top: 10%;
 }
 
-.openland_grid,
-.forrest_grid {
-  display: grid;
-  grid-template-columns: 1fr;
+.forrest_child {
+  background-image: url(/image/skov.svg);
+  background-repeat: no-repeat;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  position: relative;
+  aspect-ratio: 1920/1080;
+  margin-top: 10%;
 }
 
-.billede1,
-.ramme1,
-.titel1 h2 {
-  grid-column: 1/1;
-  grid-row: 1/1;
+.ramme1 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1920/1080;
 }
-.billede2,
-.ramme2,
-.titel2 h2 {
-  grid-column: 1/1;
-  grid-row: 1/1;
+
+.ramme2 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1920/1080;
+}
+
+.titel1 {
+  position: relative;
+  z-index: 1000;
+  width: 40%;
+  text-align: center;
+  color: var(--beige);
+  border: solid 4px var(--beige);
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.titel2 {
+  position: relative;
+  z-index: 1000;
+  width: 40%;
+  text-align: center;
+  color: var(--beige);
+  border: solid 4px var(--beige);
+  text-transform: uppercase;
+  font-size: 1rem;
 }
 
 .link-button {
-  margin-top: 10px;
+  margin-top: 40px;
   display: inline-block;
   padding: 3px 15px;
   color: var(--brun);
   border: 2px solid var(--brun);
-
   text-decoration: none;
   transition-duration: 0.4s;
   cursor: pointer;
@@ -69,33 +224,4 @@ section .forside {
 
 footer {
   margin-top: 100px;
-}
-/* minumum 800px */
-@media (min-width: 800px) {
-  .forside {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .forside_billede .overskrift1 h1 {
-    grid-column: 1/1;
-    grid-row: 1/1;
-  }
-  .overskrift1 {
-    margin: 270px 0 0 620px;
-  }
-
-  /* kategorier */
-  .kategorier {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    gap: 20px;
-  }
-
-  .openland {
-    margin-bottom: 0px;
-  }
-}
+} */

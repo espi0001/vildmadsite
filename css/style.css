@@ -28,7 +28,9 @@ body {
 
 main {
   /* max-width: 1400px; */
-  margin: 0 auto;
+  /* margin-left: 10%;
+  margin-right: 10%; */
+  margin: auto;
 }
 
 /* ___________________________ fonte ___________________________ */
@@ -82,5 +84,5 @@ ul.breadcrumb li a:hover {
 /* Breadcrumb slut */
 
 /* minumum 800px */
-@media (min-width: 800px) {
-}
+/* @media (min-width: 800px) {
+} */
