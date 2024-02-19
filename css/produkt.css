@@ -61,6 +61,142 @@ ul.breadcrumb li a:hover {
 
 /**-----------------------Rose-----------------------**/
 
+/* tilføj til generel css */
+p {
+  line-height: 1.5;
+}
+.overskift2 {
+  line-height: 2;
+}
+/* *---------------------------* */
+
+/* produkt_kasse1  */
+.overskift1 {
+  color: #302718;
+  line-height: 2;
+  margin: 4%;
+}
+
+.tekst1 {
+  margin-bottom: 8%;
+}
+
+.produkt_kasse1 {
+  margin: 4%;
+}
+.produkt_img1 {
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  margin-left: 13%;
+}
+
+/* *-----------------------------------------* */
+
+/* produkt_kasse2  */
+
+.produkt_kasse2 {
+  background-color: #302718;
+  color: #fcf2e8;
+  margin-bottom: 10%;
+  margin-top: 10%;
+  padding: 4%;
+}
+
+.produkt_img2 {
+  float: right;
+  margin-top: 25%;
+  width: 106px;
+  margin-right: 12px;
+}
+/* *-----------------------------------------* */
+
+/* produkt_kasse3  */
+.produkt_kasse3 {
+  border: 2px solid #b03711;
+  margin-bottom: 10%;
+  margin: 4%;
+  padding: 4%;
+}
+
+/* *-----------------------------------------* */
+
+/* produkt_kasse4  */
+.produkt_kasse4 {
+  margin: 4%;
+}
+
+/* *-----------------------------------------* */
+
+/* produkt_kasse5  */
+
+.produkt_kasse5 {
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 4%;
+}
+
+.cirkel-seson {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  background-color: #00ab41;
+  margin-top: 6%;
+  margin-left: -3rem;
+}
+
+.cirkel-seson::before {
+  content: "Season";
+  color: #fff;
+  font-size: 16px;
+  margin-inline: 25px;
+}
+
+.produkt_img3 {
+  border-radius: 100%;
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+.level_produkt {
+  margin-top: 6%;
+  padding: 10%;
+  display: grid;
+  grid-column: 2;
+}
+
+/* *-----------------------------------------* */
+
+/* produkt_kasse6  */
+.produkt_kasse6 {
+  margin: 4%;
+}
+/* *-----------------------------------------* */
+
+/* produkt_kasse7  */
+.produkt_kasse7 {
+  margin-top: 10%;
+  margin: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.produkt_kasse1-7 {
+  display: flex;
+  align-self: center;
+}
+
+.produkt_img6 {
+  display: flex;
+  gap: 10px;
+  width: 50%;
+  align-self: center;
+}
+/* *-----------------------------------------* */
+
 /************---*desktop---******/
 
 /* @media screen and (max-width: 800px) {
