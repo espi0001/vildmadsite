@@ -28,7 +28,9 @@ body {
 
 main {
   /* max-width: 1400px; */
-  margin: 0 auto;
+  /* margin-left: 10%;
+  margin-right: 10%; */
+  margin: auto;
 }
 
 /* ___________________________ fonte ___________________________ */
@@ -79,76 +81,8 @@ ul.breadcrumb li a:hover {
   color: red;
   text-decoration: none;
 }
+/* Breadcrumb slut */
 
-/* ___________________________ footer ___________________________ */
-
-/* footer {
-  background-image: url(/image/footer3.svg);
-  background-repeat: no-repeat;
-} */
-
-footer {
-  display: grid;
-  p {
-    color: var(--beige);
-  }
-}
-.grid1 {
-  background-color: var(--grøn);
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-bottom: 40px;
-}
-.iconer2 {
-  display: flex;
-  justify-content: center;
-}
-.footer-logo {
-  display: flex;
-  justify-content: center;
-}
-
-.footer-text {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  line-height: 2;
-  margin: auto;
-  text-align: right;
-}
-.iconerne {
-  margin: auto;
-}
-
-#sociale_medier {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.footer-logo img {
-  width: 80px;
-  height: 80px;
-}
-@media screen and (min-width: 800px) {
-  /* .footer_grid {
-    display: flex;
-    justify-content: center;
-    padding: 10px 16px;
-    margin-inline: 50px;
-    margin-top: 30px;
-    flex-wrap: wrap;
-  }
-
-  #sociale_medier {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  #logo img {
-    width: 50%;
-  } */
+/* minumum 800px */
+@media (min-width: 800px) {
 }
