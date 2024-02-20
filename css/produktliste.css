@@ -27,6 +27,13 @@ h1 {
   padding: 10px 20px;
   font-size: 16px;
   background-color: transparent;
+  margin-top: 10px;
+}
+
+.link-button {
+  margin: auto;
+  margin-top: 10px;
+  align-items: center;
 }
 
 @media (min-width: 800px) {
@@ -72,54 +79,6 @@ h1 {
   background-color: transparent;
 }
 
-@media (min-width: 800px) {
-  .liste {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-
-  .biotypeImg2 {
-    aspect-ratio: 16/9;
-  }
-}
-/* -----------------EKSEMPEL------------------- */
-
-.smallProduct {
-  position: relative;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.smallProduct img {
-  width: 100%;
-  height: auto;
-}
-
-.biotypeRamme {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  z-index: 1;
-}
-
-.link-button {
-  margin-top: 10px;
-}
-
-.link-button {
-  color: rgb(0, 171, 65);
-  border: 2px solid;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: transparent;
-}
-
 .types {
   text-align: center;
 }
@@ -129,15 +88,6 @@ h1 {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 50px;
-}
-
-.type_container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  justify-content: center;
-  max-width: 400px;
-  margin: 0 auto;
 }
 
 .type1 img,
@@ -165,68 +115,14 @@ h1 {
 }
 
 @media (min-width: 800px) {
-  #productTemplate {
+  .liste {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    justify-content: center;
-    width: 100%;
-    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
 
-  .produkt {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 50px;
-  }
-
-  .smallProduct img {
-    width: 100%;
-    height: auto;
-  }
-
-  .biotypeRamme {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    z-index: 1; /* Placer rammen over billedet */
-  }
-
-  .link-button {
-    margin: auto;
-    margin-top: 10px;
-    align-items: center;
-  }
-
-  .produkter {
-    width: 100%;
-    justify-self: center;
-    margin-bottom: 2vh;
-  }
-
-  .img {
-    justify-items: end; /* Juster billedet til højre på større skærme */
-  }
-
-  .link-button {
-    color: rgb(0, 171, 65);
-    border: 2px solid;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: transparent;
-    text-align: center;
-    align-self: center;
-  }
-
-  .type_container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    justify-content: center;
-    max-width: 600px;
-    margin: 0 auto;
+  .biotypeImg2 {
+    aspect-ratio: 16/9;
   }
 }
+/* -----------------EKSEMPEL------------------- */
