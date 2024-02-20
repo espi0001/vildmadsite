@@ -146,3 +146,18 @@ footer p {
     height: auto;
   }
 }
+
+/* __________________________ bruger __________________________ */
+.bruger {
+  width: 35%;
+  margin: auto;
+  margin-top: -2px;
+}
+
+@media screen and (min-width: 800px) {
+  .bruger {
+    width: 10%;
+    margin: auto;
+    margin-top: -2px;
+  }
+}
