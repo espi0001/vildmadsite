@@ -27,7 +27,7 @@ h1 {
   }
 
   article {
-    display: inline-block;
+    display: block;
   }
 
   .productId {
@@ -44,7 +44,7 @@ h1 {
     padding: 10px 20px;
     font-size: 1rem;
     background-color: transparent;
-    /* margin: auto; */
+    margin: auto;
     align-items: center;
   }
 }
