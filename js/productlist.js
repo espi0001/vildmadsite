@@ -5,7 +5,7 @@
 // const urlInfo = urlParams.get('Urlinfo')
 // console.log(urlInfo)
 
-const url = `https://irsycvwaapqcapcnbgra.supabase.co/rest/v1/vildereMadCsv`
+const url = `https://irsycvwaapqcapcnbgra.supabase.co/rest/v1/vildereMadCsv?category1=eq.Forrest`
 
 // ?categories=${urlInfo}
 
