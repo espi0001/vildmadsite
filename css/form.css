@@ -1,0 +1,85 @@
+body {
+  background-color: var(--beige);
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+}
+
+#form {
+  background-color: rgb(0, 171, 65);
+  margin-top: 5vh;
+  padding: 5vh;
+  margin: 5vh;
+}
+
+h1 {
+  color: #fff;
+  border: 2px solid;
+  padding: 10px;
+  font-size: 16px;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgb(136, 185, 129);
+  margin: 2vh;
+}
+
+#container2 {
+  background-color: rgb(0, 171, 65);
+  margin-top: 5vh;
+  padding: 20px;
+  margin: 5vh;
+}
+
+.sign {
+  display: flex;
+  align-items: center;
+  margin: 2vh;
+}
+
+.sign p {
+  margin-right: 10vh;
+}
+
+.log_in {
+  color: rgb(158, 38, 38);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.sign img {
+  width: 50px;
+  margin: 2vh;
+}
+
+.sign a,
+.account a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (min-width: 800px) {
+  #form {
+    background-color: rgb(0, 171, 65);
+    margin-top: 5vh;
+    padding: 5vh;
+    margin: 20vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
+  #container2 {
+    background-color: rgb(0, 171, 65);
+    margin-top: 5vh;
+    padding: 20px;
+    margin: 20vh;
+    margin-top: 5vh;
+  }
+}
