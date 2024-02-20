@@ -25,6 +25,8 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+  max-width: 1400px;
+  margin: auto;
 }
 
 .openland_child {
