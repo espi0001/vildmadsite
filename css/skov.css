@@ -1,3 +1,117 @@
+section {
+  position: relative;
+  z-index: 1;
+  background-image: url(/image/skov.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  object-fit: cover;
+}
+
+.interactive_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  aspect-ratio: 1920/1080;
+}
+
+.interactive_grid_child_1 {
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-image: url(/image/tree.svg);
+  aspect-ratio: 1920/1080;
+  background-repeat: no-repeat;
+  margin-top: 10%;
+  transform: scale(3);
+}
+
+.interactive_grid_child_2 {
+  background-image: url(/image/svamp_skov.svg);
+  aspect-ratio: 179.27/253.67;
+  background-repeat: no-repeat;
+  position: relative;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  margin-top: 25%;
+  margin-bottom: -100%;
+  transform: scale(0.2);
+}
+
+.interactive_grid_child_3 {
+  background-image: url(/image/berries.svg);
+  aspect-ratio: 1920/1080;
+  background-repeat: no-repeat;
+  position: relative;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin-top: 20%;
+  transform: scale(2);
+}
+
+.interactive_grid_child_4 {
+  background-image: url(/image/sun_flower.svg);
+  aspect-ratio: 595.28/841.89;
+  background-repeat: no-repeat;
+  position: relative;
+  grid-column: 4/5;
+  grid-row: 2/3;
+  margin-top: 10%;
+  margin-bottom: -100%;
+  transform: scale(0.5);
+}
+
+.interactive_grid_child_1:hover {
+  animation: wobble-hor-bottom-1 0.8s both;
+  cursor: pointer;
+}
+
+@keyframes wobble-hor-bottom-1 {
+  0%,
+  100% {
+    transform: scale(3.2);
+    transform-origin: 50% 50%;
+  }
+}
+
+.interactive_grid_child_2:hover {
+  animation: wobble-hor-bottom-2 0.8s both;
+  cursor: pointer;
+}
+
+@keyframes wobble-hor-bottom-2 {
+  0%,
+  100% {
+    transform: scale(0.3);
+    transform-origin: 50% 50%;
+  }
+}
+
+.interactive_grid_child_3:hover {
+  animation: wobble-hor-bottom-3 0.8s both;
+  cursor: pointer;
+}
+
+@keyframes wobble-hor-bottom-3 {
+  0%,
+  100% {
+    transform: scale(2.2);
+    transform-origin: 50% 50%;
+  }
+}
+
+.interactive_grid_child_4:hover {
+  animation: wobble-hor-bottom-4 0.8s both;
+  cursor: pointer;
+}
+
+@keyframes wobble-hor-bottom-4 {
+  0%,
+  100% {
+    transform: scale(0.6);
+    transform-origin: 50% 50%;
+  }
+}
+
 article {
   text-align: center;
 }
