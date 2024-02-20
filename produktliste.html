@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- europæisk sprog -->
     <meta charset="utf-8" />
 
@@ -12,8 +11,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- SEO -->
-    <meta name="description"
-        content="sankeværktøjer til børn og unger, der ønsker at finde mad og krydderurter i naturen" />
+    <meta
+      name="description"
+      content="sankeværktøjer til børn og unger, der ønsker at finde mad og krydderurter i naturen"
+    />
     <meta name="author" content="Mads, Ester, Rose, sophie" />
     <meta name="copyright" content="gruppe_10" />
 
@@ -28,8 +29,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS -->
     <link rel="stylesheet" href="/css/style.css" />
@@ -37,69 +39,115 @@
     <link rel="stylesheet" href="/css/menu.css" />
     <link rel="stylesheet" href="/css/produktliste.css" />
     <title>Vildere Mad | Produktliste</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="logo">
-            <a href="index.html"><img id="logo_svg" src="image/logo.svg" alt="logo" /></a>
+      <div class="logo">
+        <a href="index.html"
+          ><img id="logo_svg" src="image/logo.svg" alt="logo"
+        /></a>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="/html/skov.html">Forrest</a></li>
+          <li><a href="#">Open land</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
         </div>
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="/html/skov.html">Forrest</a></li>
-                <li><a href="#">Open land</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-        </nav>
+      </nav>
     </header>
 
     <main>
-        <ul class="breadcrumb">
-            <li><a href="index.html">Forside</a></li>
-            <li><a href="/html/skov.html">Skov</a></li>
-            <li><a href="/html/produktliste.html">Produktliste</a></li>
-        </ul>
+      <ul class="breadcrumb">
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="/html/skov.html">Skov</a></li>
+        <li><a href="/html/produktliste.html">Produktliste</a></li>
+      </ul>
     </main>
     <h1>Mushrooms</h1>
-    <section id="produktliste">
-        <article id="produkter">
-            <div class="img">
-                <img src="image/test_svamp.jpg" alt="testsvamp" />
-                <img src="" alt="" />
-            </div>
-            <button class="knap">Hedgehog</button>
-        </article>
-    </section>
-    <section id="typer">
-        <p>Different types in the Forrest</p>
-        <div class="tag-container">
-            <div class="tag1">
-                <img src="image/noed_side3.png" alt="nød" />
-                <p>7</p>
-            </div>
-            <div class="tag2">
-                <img src="image/froe_side3.png" alt="frø" />
-                <p>4</p>
-            </div>
-            <div class="tag3">
-                <img src="image/traer_side3.png" alt="træ" />
-                <p>6</p>
-            </div>
-            <div class="tag4">
-                <img src="image/buske_side3.png" alt="buske" />
-                <p>2</p>
-            </div>
+    <section id="produktliste" class="grid-container">
+      <div class="produkt">
+        <div class="container">
+          <img
+            src="/image/aaben_landskab.svg"
+            alt="testsvamp"
+            class="test-svamp img"
+          />
+          <img class="ramme-overlay img" src="/image/ramme3.svg" alt="ramme" />
+
+          <a href="produkt.html" class="link-button">Hedgehog</a>
         </div>
+      </div>
+
+      <div class="produkt">
+        <div class="container">
+          <img
+            src="/image/aaben_landskab.svg"
+            alt="testsvamp"
+            class="test-svamp img"
+          />
+          <img class="ramme-overlay img" src="/image/ramme3.svg" alt="ramme" />
+
+          <a href="produkt.html" class="link-button">Hedgehog</a>
+        </div>
+      </div>
+
+      <div class="produkt">
+        <div class="container">
+          <img
+            src="/image/aaben_landskab.svg"
+            alt="testsvamp"
+            class="test-svamp img"
+          />
+          <img class="ramme-overlay img" src="/image/ramme3.svg" alt="ramme" />
+
+          <a href="produkt.html" class="link-button">Hedgehog</a>
+        </div>
+      </div>
+
+      <div class="produkt">
+        <div class="container">
+          <img
+            src="/image/aaben_landskab.svg"
+            alt="testsvamp"
+            class="test-svamp img"
+          />
+          <img class="ramme-overlay img" src="/image/ramme3.svg" alt="ramme" />
+
+          <a href="produkt.html" class="link-button">Hedgehog</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="typer">
+      <p>Different types in the Forrest</p>
+      <div class="tag-container">
+        <div class="tag1">
+          <img src="image/noed_side3.png" alt="nød" />
+          <p>7</p>
+        </div>
+        <div class="tag2">
+          <img src="image/froe_side3.png" alt="frø" />
+          <p>4</p>
+        </div>
+        <div class="tag3">
+          <img src="image/traer_side3.png" alt="træ" />
+          <p>6</p>
+        </div>
+        <div class="tag4">
+          <img src="image/buske_side3.png" alt="buske" />
+          <p>2</p>
+        </div>
+      </div>
     </section>
 
     <footer class="footer"></footer>
     <script src="/js/script.js"></script>
     <script src="/js/menu.js"></script>
-</body>
-
+  </body>
 </html>

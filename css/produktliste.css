@@ -3,22 +3,45 @@ h1 {
   margin: 20px;
 }
 
-#produkter {
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.produkt {
+  margin-bottom: 20px;
+}
+
+.container {
+  position: relative;
   text-align: center;
-  margin-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-#produkter img {
+.container img {
   width: 100%;
-  justify-self: center;
-  margin-bottom: 2vh;
+  height: auto;
 }
 
-.img {
-  width: 50%;
+.ramme-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
 }
 
-.knap {
+.link-button {
+  margin-top: 10px;
+}
+
+.link-button {
   color: rgb(0, 171, 65);
   border: 2px solid;
   padding: 10px 20px;
@@ -34,16 +57,16 @@ h1 {
   color: rgb(158, 38, 38);
   text-align: center;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .tag-container {
-  margin: 200px;
-  margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   justify-content: center;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .tag1 img,
@@ -68,4 +91,71 @@ h1 {
   position: relative;
   top: -20px;
   left: -1px;
+}
+
+@media (min-width: 800px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .produkt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px;
+  }
+
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .ramme-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1; /* Placer rammen over billedet */
+  }
+
+  .link-button {
+    margin: auto;
+    margin-top: 10px;
+    align-items: center;
+  }
+
+  .produkter {
+    width: 100%;
+    justify-self: center;
+    margin-bottom: 2vh;
+  }
+
+  .img {
+    justify-items: end; /* Juster billedet til højre på større skærme */
+  }
+
+  .link-button {
+    color: rgb(0, 171, 65);
+    border: 2px solid;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: transparent;
+    text-align: center;
+    align-self: center;
+  }
+
+  .tag-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
 }
