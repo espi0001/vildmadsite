@@ -1,10 +1,10 @@
-// const urlParams = new URLSearchParams(window.location.search)
-// const urlInfo = urlParams.get('Urlinfo')
-// console.log(urlInfo)
+const urlParams = new URLSearchParams(window.location.search)
+const urlInfo = urlParams.get('Urlinfo')
+console.log(urlInfo)
 
-// const url = `https://irsycvwaapqcapcnbgra.supabase.co/rest/v1/vildereMadCsv?category1=eq.${urlInfo}`
-const url =
-  'https://irsycvwaapqcapcnbgra.supabase.co/rest/v1/vildereMadCsv?biotype=eq.Mushrooms'
+const url = `https://irsycvwaapqcapcnbgra.supabase.co/rest/v1/vildereMadCsv?biotype=eq.${urlInfo}`
+// const url =
+//   'https://irsycvwaapqcapcnbgra.supabase.co/rest/v1/vildereMadCsv?biotype=eq.Mushrooms'
 
 fetch(url, {
   method: 'GET',
@@ -20,10 +20,6 @@ function dataReceived (data) {
   console.log('Her kommer data: ', data)
 
   data.forEach(showProduct)
-}
-
-function biotype (name) {
-  document.querySelector('.biotype').textContent = name.biotype
 }
 
 function showProduct (product) {
