@@ -1,198 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- europæisk sprog -->
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
 
     <!-- Det eks hvis man bruger safari - så browser ser ens ud-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Fortæller at det er et pesponsivt site -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- SEO -->
-    <meta
-      name="description"
-      content="sankeværktøjer til børn og unger, der ønsker at finde mad og krydderurter i naturen"
-    />
-    <meta name="author" content="Mads, Ester, Rose, sophie" />
-    <meta name="copyright" content="gruppe_10" />
+    <meta name="description"
+        content="sankeværktøjer til børn og unger, der ønsker at finde mad og krydderurter i naturen">
+    <meta name="author" content="Mads, Ester, Rose, Sophie">
+    <meta name="copyright" content="gruppe_10">
 
     <!-- Den kommer ikke frem hos søgemaskiner -->
-    <meta name="robots" content="noindex, nofollow" />
+    <meta name="robots" content="noindex, nofollow">
 
     <!-- fa-icon -->
-    <link rel="icon" href="logo/logo.webp" type="image/x-icon" />
-    <link rel="shortcut icon" href="logo/logo.webp" type="image/x-icon" />
+    <link rel="icon" href="logo/logo.webp" type="image/x-icon">
+    <link rel="shortcut icon" href="logo/logo.webp" type="image/x-icon">
 
     <!-- FONTE -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/index.css" />
-    <link rel="stylesheet" href="/css/menu.css" />
-    <link rel="stylesheet" href="/css/produktliste.css" />
-    <title>Vildere Mad | Produktliste</title>
-  </head>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/produktliste.css">
+    <link rel="stylesheet" href="/css/menu.css">
 
-  <body>
+    <title>Vildere Mad | Produktliste</title>
+</head>
+
+<body>
     <header>
-      <div class="logo">
-        <a href="index.html"
-          ><img id="logo_svg" src="/image/logo_19:02.svg" alt="logo"
-        /></a>
-      </div>
-      <nav>
-        <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="/html/skov.html">Forrest</a></li>
-          <li><a href="#">Open land</a></li>
-        </ul>
-        <div class="bruger">
-          <li>
-            <a href="/form.html">
-              <img src="/image/form_bruger.svg" alt="bruger" />
-            </a>
-          </li>
+        <div class="logo">
+            <a href="index.html"><img id="logo_svg" src="/image/logo.png" alt="logo"></a>
         </div>
-        <div class="burger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-      </nav>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/html/skov.html">Forrest</a></li>
+                <li><a href="#">Open land</a></li>
+            </ul>
+            <div class="bruger">
+                <li>
+                    <a href="/form.html">
+                        <img src="/image/form_bruger.svg" alt="bruger">
+                    </a>
+                </li>
+            </div>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
     </header>
 
-    <main>
-      <ul class="breadcrumb">
-        <li><a href="index.html">Forside</a></li>
-        <li><a href="/html/skov.html">Skov</a></li>
-        <li><a href="/html/produktliste.html">Produktliste</a></li>
-      </ul>
+
+
+
+    <main class="produktliste">
+        <ul class="breadcrumb">
+            <li><a href="index.html">Forside</a></li>
+            <li><a href="/html/skov.html">Skov</a></li>
+            <li><a class="biotypeSti" href="/html/produktliste.html">Biotype</a></li>
+        </ul>
+
+
+        <h1 class="biotype"> Biotype</h1>
+        <template id="productTemplate">
+            <article class="biotypeProduct">
+                <div class="billeder_grid">
+                    <img class="biotypeImg" src="" alt="billede af biotype">
+                    <img class="biotypeRamme" src="/image/ramme3.svg" alt="ramme">
+                </div>
+                <div class="productTitle">
+                    <a href="produkt.html" class="link-button">Navn på SubCategory</a>
+                </div>
+
+            </article>
+        </template>
+
+
+        <!------------- BARE FOR AT SE EKSEMPEL AF STYLET  ----------->
+        <div class="liste">
+            <article class="biotypeProduct2">
+                <div class="billeder_grid2">
+                    <img class="biotypeImg2"
+                        src="https://vildmadv2.vps.webdock.io/application/files/7116/2029/3479/Blaeretang_ravarkort.png"
+                        alt="billede af biotype">
+                    <img class="biotypeRamme2" src="/image/ramme3.svg" alt="ramme">
+                </div>
+                <div class="productTitle2">
+                    <a href="produkt.html" class="link-button2">Navn på SubCategory</a>
+                </div>
+            </article>
+
+
+            <article class="biotypeProduct2">
+                <div class="billeder_grid2">
+                    <img class="biotypeImg2"
+                        src="https://vildmadv2.vps.webdock.io/application/files/7116/2029/3479/Blaeretang_ravarkort.png"
+                        alt="billede af biotype">
+                    <img class="biotypeRamme2" src="/image/ramme3.svg" alt="ramme">
+                </div>
+                <div class="productTitle2">
+                    <a href="produkt.html" class="link-button2">Navn på SubCategory</a>
+                </div>
+            </article>
+        </div>
+        <!------------- BARE FOR AT SE EKSEMPEL AF STYLET  ----------->
+
+
+        <section class="types">
+            <h2>Different types in the Forrest</h2>
+            <div class="type_container">
+                <div class="type1">
+                    <img src="image/noed_side3.png" alt="nød">
+                    <p>7</p>
+                </div>
+                <div class="type2">
+                    <img src="image/froe_side3.png" alt="frø">
+                    <p>4</p>
+                </div>
+                <div class="type3">
+                    <img src="image/traer_side3.png" alt="træ">
+                    <p>6</p>
+                </div>
+                <div class="type4">
+                    <img src="image/buske_side3.png" alt="buske">
+                    <p>2</p>
+                </div>
+            </div>
+        </section>
+
     </main>
-    <h1>Mushrooms</h1>
-    <section id="produktliste" class="grid-container">
-      <div class="produkt">
-        <div class="container">
-          <img
-            src="/image/aaben_landskab.svg"
-            alt="testsvamp"
-            class="test-svamp img"
-          />
-          <img class="ramme-overlay img" src="/image/ramme3.svg" alt="ramme" />
 
-          <a href="produkt.html" class="link-button">Hedgehog</a>
-        </div>
-      </div>
+    <!-- <h1>Mushrooms</h1> -->
+    <!-- <section id="produktliste" class="grid-container">
+        <div class="produkt">
+            <div class="container">
+                <img src="/image/aaben_landskab.svg" alt="testsvamp" class="test-svamp img">
+                <img class="ramme-overlay img" src="/image/ramme3.svg" alt="ramme">
 
-      <div class="produkt">
-        <div class="container">
-          <img
-            src="/image/aaben_landskab.svg"
-            alt="testsvamp"
-            class="test-svamp img"
-          />
-          <img class="ramme-overlay img" src="/image/ramme3.svg" alt="ramme" />
+                <a href="produkt.html" class="link-button">Hedgehog</a>
+            </div>
+        </div>
 
-          <a href="produkt.html" class="link-button">Hedgehog</a>
-        </div>
-      </div>
+        <div class="produkt">
+            <div class="container">
+                <img src="/image/aaben_landskab.svg" alt="testsvamp" class="test-svamp img">
+                <img class="ramme-overlay img" src="/image/ramme3.svg" alt="ramme">
 
-      <div class="produkt">
-        <div class="container">
-          <img
-            src="/image/aaben_landskab.svg"
-            alt="testsvamp"
-            class="test-svamp img"
-          />
-          <img class="ramme-overlay img" src="/image/ramme3.svg" alt="ramme" />
+                <a href="produkt.html" class="link-button">Hedgehog</a>
+            </div>
+        </div>
 
-          <a href="produkt.html" class="link-button">Hedgehog</a>
-        </div>
-      </div>
+        <div class="produkt">
+            <div class="container">
+                <img src="/image/aaben_landskab.svg" alt="testsvamp" class="test-svamp img">
+                <img class="ramme-overlay img" src="/image/ramme3.svg" alt="ramme">
 
-      <div class="produkt">
-        <div class="container">
-          <img
-            src="/image/aaben_landskab.svg"
-            alt="testsvamp"
-            class="test-svamp img"
-          />
-          <img class="ramme-overlay img" src="/image/ramme3.svg" alt="ramme" />
+                <a href="produkt.html" class="link-button">Hedgehog</a>
+            </div>
+        </div>
 
-          <a href="produkt.html" class="link-button">Hedgehog</a>
-        </div>
-      </div>
-    </section>
+        <div class="produkt">
+            <div class="container">
+                <img src="/image/aaben_landskab.svg" alt="testsvamp" class="test-svamp img">
+                <img class="ramme-overlay img" src="/image/ramme3.svg" alt="ramme">
 
-    <section id="typer">
-      <p>Different types in the Forrest</p>
-      <div class="tag-container">
-        <div class="tag1">
-          <img src="image/noed_side3.png" alt="nød" />
-          <p>7</p>
+                <a href="produkt.html" class="link-button">Hedgehog</a>
+            </div>
         </div>
-        <div class="tag2">
-          <img src="image/froe_side3.png" alt="frø" />
-          <p>4</p>
-        </div>
-        <div class="tag3">
-          <img src="image/traer_side3.png" alt="træ" />
-          <p>6</p>
-        </div>
-        <div class="tag4">
-          <img src="image/buske_side3.png" alt="buske" />
-          <p>2</p>
-        </div>
-      </div>
-    </section>
+    </section> -->
+
 
     <footer>
-      <!-- billedet -->
-      <div class="baggrund">
-        <img src="/image/footer3.svg" alt="footer" />
-      </div>
-      <!-- grøn kasse under billedet -->
-      <div class="grid_green">
-        <!-- footer grid -->
-        <div class="footer_grid">
-          <!-- footer sociale medier -->
-          <div class="footer_iconer">
-            <p>Follow us:</p>
-            <div class="footer_iconer2">
-              <div class="footer_iconer3">
-                <img src="/image/footer_facebook.svg" alt="facebook_tag" />
-                <img src="/image/footer_instagram.svg" alt="instagram_tag" />
-                <img src="/image/footer_tiktok.svg" alt="tiktok_tag" />
-                <img src="/image/footer_snapchat.svg" alt="snapchat_tag" />
-              </div>
-            </div>
-          </div>
-          <!-- footer logo -->
-          <div class="footer_logo">
-            <img src="/image/logo_19:02.svg" alt="logo" />
-          </div>
-          <!-- footer tekst -->
-          <div class="footer_text">
-            <p>VilMad.dk</p>
-            <p>Contact</p>
-            <p>
-              Et projekt udviklet af:
-              <br />
-              https://madfeed.co/
-            </p>
-            <p>Foraging Landscapes</p>
-          </div>
+        <!-- billedet -->
+        <div class="baggrund">
+            <img src="/image/footer3.svg" alt="footer">
         </div>
-      </div>
+        <!-- grøn kasse under billedet -->
+        <div class="grid_green">
+            <!-- footer grid -->
+            <div class="footer_grid">
+                <!-- footer sociale medier -->
+                <div class="footer_iconer">
+                    <p>Follow us:</p>
+                    <div class="footer_iconer2">
+                        <div class="footer_iconer3">
+                            <img src="/image/footer_facebook.svg" alt="facebook_tag">
+                            <img src="/image/footer_instagram.svg" alt="instagram_tag">
+                            <img src="/image/footer_tiktok.svg" alt="tiktok_tag">
+                            <img src="/image/footer_snapchat.svg" alt="snapchat_tag">
+                        </div>
+                    </div>
+                </div>
+                <!-- footer logo -->
+                <div class="footer_logo">
+                    <img src="/image/logo.png" alt="logo">
+                </div>
+                <!-- footer tekst -->
+                <div class="footer_text">
+                    <p>VilMad.dk</p>
+                    <p>Contact</p>
+                    <p>
+                        Et projekt udviklet af:
+                        <br>
+                        https://madfeed.co/
+                    </p>
+                    <p>Foraging Landscapes</p>
+                </div>
+            </div>
+        </div>
     </footer>
     <script src="/js/script.js"></script>
     <script src="/js/menu.js"></script>
-  </body>
+    <!-- <script src="/js/produktliste.js"></script> -->
+</body>
+
 </html>
