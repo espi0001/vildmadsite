@@ -31,17 +31,6 @@ function showProductList (showProduct) {
     'img'
   ).src = `https://irsycvwaapqcapcnbgra.supabase.co/images/${showProduct.id}.webp`
 
-  myClone.querySelector('.price span').textContent = showProduct.price
-  myClone.querySelector('.discount span').textContent = showProduct.discount
-
-  if (!showProduct.discount) {
-    myClone.querySelector('.discount').remove()
-  }
-
-  if (showProduct.soldout) {
-    myClone.querySelector('article').classList.add('.soldout')
-  }
-
   const parentElement = document.querySelector('main')
   parentElement.appendChild(myClone)
 }
