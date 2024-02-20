@@ -1,7 +1,7 @@
 section {
   position: relative;
   z-index: 1;
-  background-image: url(/image/skov.svg);
+  background-image: url(/image/2_forrest.svg);
   background-repeat: no-repeat;
   width: 100%;
   object-fit: cover;
@@ -40,7 +40,7 @@ section {
   position: relative;
   grid-column: 1/2;
   grid-row: 2/3;
-  background-image: url(/image/SVG/herbsAsset\ 2.svg);
+  background-image: url(/image/SVG/herbsAsset2.svg);
   aspect-ratio: 444.78/490.16;
   background-repeat: no-repeat;
   margin-top: 50%;
@@ -48,7 +48,7 @@ section {
 }
 
 .interactive_grid_child_2 {
-  background-image: url(/image/SVG/bushAsset\ 4.svg);
+  background-image: url(/image/SVG/bushAsset4.svg);
   aspect-ratio: 314.09/386.63;
   background-repeat: no-repeat;
   position: relative;
@@ -59,7 +59,7 @@ section {
 }
 
 .interactive_grid_child_3 {
-  background-image: url(/image/SVG/treeAsset\ 3.svg);
+  background-image: url(/image/SVG/treeAsset3.svg);
   aspect-ratio: 454.8 /537.09;
   background-repeat: no-repeat;
   position: relative;
@@ -69,7 +69,7 @@ section {
 }
 
 .interactive_grid_child_4 {
-  background-image: url(/image/SVG/shroomAsset\ 5.svg);
+  background-image: url(/image/SVG/shroomAsset5.svg);
   aspect-ratio: 261.55/267;
   background-repeat: no-repeat;
   position: relative;
