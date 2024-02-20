@@ -17,8 +17,8 @@ header {
 }
 
 .logo img {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
 }
 
 nav {
@@ -32,6 +32,7 @@ nav {
   margin: 0;
   padding: 0;
   flex-wrap: nowrap;
+  align-items: center;
 }
 
 .menu li {
@@ -51,6 +52,7 @@ nav {
   text-align: end;
   text-transform: uppercase;
   font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
 }
 
 .menu a:hover {
@@ -71,15 +73,33 @@ nav {
   margin-bottom: 5px;
   transition: 0.2s linear;
 }
+/* burger menu */
 .burger {
   display: none;
 }
+/* bruger icon */
+.bruger {
+  display: none;
+}
+.bruger_icon img {
+  width: 40px;
+}
 
+/* __________________________ Mobil delen __________________________ */
 /* maximum 800px */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .menu {
     display: none;
   }
+  .bruger_icon {
+    display: none;
+  }
+  .bruger {
+    display: block;
+    width: 30px;
+    margin-right: 20px;
+  }
+
   .burger {
     display: block;
   }
@@ -102,7 +122,7 @@ nav {
     display: block;
     background-color: var(--grøn);
     position: absolute;
-    top: 18%;
+    top: 89px;
     left: 0;
     width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -114,6 +134,10 @@ nav {
   }
 
   nav.active .menu a {
-    font-size: 24px;
+    font-size: 1rem;
+  }
+  .logo img {
+    width: 50px;
+    height: 50px;
   }
 }
