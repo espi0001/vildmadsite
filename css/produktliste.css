@@ -3,8 +3,8 @@ h1 {
   margin: 20px;
 }
 
-#productTemplate {
-  display: block;
+.jsList {
+  display: grid;
 }
 .billeder_grid {
   display: grid;
@@ -37,7 +37,7 @@ h1 {
 }
 
 @media (min-width: 800px) {
-  #productTemplate {
+  .jsList {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -46,37 +46,6 @@ h1 {
   .biotypeImg {
     aspect-ratio: 16/9;
   }
-}
-
-/* -----------------EKSEMPEL------------------- */
-.liste {
-  display: block;
-}
-.biotypeProduct2 {
-  margin-bottom: 20px;
-}
-
-.billeder_grid2 {
-  display: grid;
-}
-.biotypeImg2,
-.biotypeRamme2 {
-  grid-column: 1/1;
-  grid-row: 1/1;
-  aspect-ratio: 16/9;
-}
-
-.productTitle2 {
-  display: flex;
-  justify-content: center;
-}
-
-.link-button2 {
-  color: rgb(0, 171, 65);
-  border: 2px solid;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: transparent;
 }
 
 .types {
@@ -113,16 +82,3 @@ h1 {
   top: -20px;
   left: -1px;
 }
-
-@media (min-width: 800px) {
-  .liste {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-
-  .biotypeImg2 {
-    aspect-ratio: 16/9;
-  }
-}
-/* -----------------EKSEMPEL------------------- */
