@@ -9,7 +9,7 @@ const url = `https://irsycvwaapqcapcnbgra.supabase.co/rest/v1/vildereMadCsv`
 
 // ?categories=${urlInfo}
 
-fetch(url, {
+fetch(`https://irsycvwaapqcapcnbgra.supabase.co/rest/v1/vildereMadCsv`, {
   method: 'GET',
   headers: {
     apikey:
