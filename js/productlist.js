@@ -3,7 +3,8 @@
 // console.log(urlInfo)
 
 // const url = `https://irsycvwaapqcapcnbgra.supabase.co/rest/v1/vildereMadCsv?category1=eq.${urlInfo}`
-const url = 'https://irsycvwaapqcapcnbgra.supabase.co/rest/v1/vildereMadCsv'
+const url =
+  'https://irsycvwaapqcapcnbgra.supabase.co/rest/v1/vildereMadCsv?biotype=eq.Mushrooms'
 
 fetch(url, {
   method: 'GET',
@@ -21,19 +22,20 @@ function dataReceived (data) {
   data.forEach(showProduct)
 }
 
+function biotype (name) {
+  document.querySelector('.biotype').textContent = name.biotype
+}
+
 function showProduct (product) {
   const template = document.querySelector('template').content
   const copy = template.cloneNode(true)
 
-  copy.querySelector('.productId').textContent = product.productId
-  copy.querySelector('.productTitle').textContent = product.productTitle
-  copy.querySelector(
-    'img'
-  ).src = `https://irsycvwaapqcapcnbgra.supabase.co/rest/v1/vildereMadCsv?select=${product.productImg}`
+  //   copy.querySelector('.biotype').textContent = product.biotype
 
-  //   copy
-  //     .querySelector('.productTitle')
-  //     .setAttribute('href', `product.html?id=${product.productTitle}`)
+  copy.querySelector('.productId').textContent = product.productId
+  copy.querySelector('#productTitle').textContent = product.productTitle
+
+  copy.querySelector('.biotypeImg').src = product.productImg
 
   document.querySelector('.jsList').appendChild(copy)
 }
