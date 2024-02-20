@@ -27,7 +27,10 @@ h1 {
   }
 
   article {
-    display: block;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
   }
 
   .productId {
@@ -35,7 +38,7 @@ h1 {
   }
 
   .biotypeImg {
-    width: 70%;
+    width: 100%;
   }
 
   .link-button {
@@ -44,8 +47,8 @@ h1 {
     padding: 10px 20px;
     font-size: 1rem;
     background-color: transparent;
-    margin: auto;
     align-items: center;
+    width: 32%;
   }
 }
 
