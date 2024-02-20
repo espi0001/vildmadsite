@@ -6,20 +6,6 @@ h1 {
 .jsList {
   display: grid;
 }
-.billeder_grid {
-  display: grid;
-}
-
-.biotypeImg,
-.biotypeRamme {
-  grid-column: 1/1;
-  grid-row: 1/1;
-  aspect-ratio: 16/9;
-}
-.productTitle {
-  display: flex;
-  justify-content: center;
-}
 
 .link-button {
   color: rgb(0, 171, 65);
@@ -28,11 +14,6 @@ h1 {
   font-size: 16px;
   background-color: transparent;
   margin-top: 10px;
-}
-
-.link-button {
-  margin: auto;
-  margin-top: 10px;
   align-items: center;
 }
 
@@ -40,11 +21,31 @@ h1 {
   .jsList {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  article {
+    display: inline-block;
+  }
+
+  .productId {
+    display: none;
   }
 
   .biotypeImg {
-    aspect-ratio: 16/9;
+    width: 70%;
+  }
+
+  .link-button {
+    color: rgb(0, 171, 65);
+    border: 2px solid;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: transparent;
+    /* margin: auto; */
+    align-items: center;
   }
 }
 
