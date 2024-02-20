@@ -1,3 +1,12 @@
+html {
+  --beige: #fcf2e8;
+  --grøn: #00ab41;
+  --brun: #302718;
+  --rødbrun: #b03711;
+  --font_sort: #000000;
+  --font_hvid: #ffffff;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -45,7 +54,7 @@ nav {
 }
 
 .menu a:hover {
-  color: #f00;
+  color: var(--rødbrun);
 }
 
 .burger {
