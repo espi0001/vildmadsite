@@ -1,11 +1,10 @@
 /* ________________________________mobil______________________________ */
 
 .forside {
-  background-image: url(/image/1_background.svg);
-  aspect-ratio: 16/9;
+  background-image: url(/image/1_background2.svg);
+  aspect-ratio: 1600/500;
   width: 100%;
   object-fit: cover;
-  margin-bottom: 30px;
   background-repeat: no-repeat;
 }
 
@@ -13,13 +12,13 @@
   position: relative;
   z-index: 99;
   margin: auto;
-  width: 50%;
-  top: 50%;
+  width: 55%;
+  top: 40%;
   text-align: center;
   color: var(--beige);
   border: solid 4px var(--beige);
   text-transform: uppercase;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 .kategorier {
@@ -99,12 +98,12 @@
   text-decoration: none;
   transition-duration: 0.4s;
   cursor: pointer;
+  letter-spacing: 2px;
 }
 
 .link-button:hover {
-  border: 2px solid var(--beige);
-  background-color: var(--grøn);
-  color: var(--beige);
+  border: 2px solid var(--grøn);
+  color: var(--grøn);
 }
 /* ___________________________ TABLET  ___________________________*/
 @media screen and (min-width: 768px) {
@@ -122,14 +121,14 @@
 /* ________________________________desktop______________________________ */
 
 @media only screen and (min-width: 1024px) {
-  .forside {
-    background-image: url(/image/1_background.svg);
+  /* .forside {
+    background-image: url(/image/1_background.png);
     aspect-ratio: 16/9;
     width: 100%;
     object-fit: cover;
     margin-bottom: 30px;
     background-repeat: no-repeat;
-  }
+  } */
 
   .overskrift1 {
     font-size: 4rem;
@@ -140,7 +139,7 @@
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
     grid-gap: 10px;
-    margin: 30px 0 0 0;
+    margin: 30px 0 20px 0;
   }
 
   .titel1 {
@@ -149,5 +148,10 @@
 
   .titel2 {
     font-size: 2rem;
+  }
+  .link-button {
+    margin-top: 30px;
+    padding: 13px 45px;
+    font-size: 1.3rem;
   }
 }
