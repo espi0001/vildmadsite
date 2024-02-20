@@ -21,7 +21,6 @@ h1 {
   .jsList {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 50px;
     margin-left: 5%;
     margin-right: 5%;
   }
@@ -31,6 +30,9 @@ h1 {
     justify-content: center;
     flex-direction: column;
     margin: auto;
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
   }
 
   .productId {
@@ -38,17 +40,21 @@ h1 {
   }
 
   .biotypeImg {
+    border-radius: 100%;
     width: 100%;
+    padding: 10%;
   }
 
   .link-button {
     color: rgb(0, 171, 65);
     border: 2px solid;
     padding: 10px 20px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     background-color: transparent;
     align-items: center;
-    width: 32%;
+    width: 200px;
+    text-decoration: none;
+    text-align: center;
   }
 }
 
@@ -67,15 +73,17 @@ h1 {
 .type2 img,
 .type3 img,
 .type4 img {
-  width: 80px;
-  height: 80px;
+  width: 150px;
+  height: 150px;
   border: 5px solid;
   border-radius: 100%;
-  margin: 0 auto;
+  margin: auto;
+  margin-bottom: 3%;
   display: flex;
   justify-content: center;
   text-align: center;
   color: rgb(0, 171, 65);
+  background-color: rgb(0, 171, 65);
 }
 
 .type1 p,
@@ -83,6 +91,9 @@ h1 {
 .type3 p,
 .type4 p {
   position: relative;
-  top: -20px;
+  top: -30px;
   left: -1px;
+  color: rgb(0, 171, 65);
+  z-index: 101;
+  font-size: 2rem;
 }
