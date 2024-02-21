@@ -19,3 +19,9 @@ function dataReceived (data) {
 
   data.forEach(showProduct)
 }
+
+function showSingleProduct (singleProduct) {
+  document.querySelector('h2').textContent = singleProduct.productTitle
+
+  document.querySelector('######').src = product.productImg
+}
