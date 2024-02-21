@@ -50,6 +50,16 @@ section {
   text-shadow: black 0px 0px 10px;
 }
 
+.biotypes_svg {
+  display: none;
+  color: var(--font_hvid);
+  font-family: "Tinos", sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-align: center;
+  margin: auto;
+}
+
 .interactive_grid_child_1 {
   position: relative;
   grid-column: 1/2;
