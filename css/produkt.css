@@ -4,75 +4,12 @@
   max-width: 100%;
 }
 
-html {
-  --beige: #fcf2e8;
-  --grøn: #00ab41;
-  --font_sort: #000000;
-  --font_hvid: #ffffff;
-  --brun: #333333;
-}
-
-body {
-  background-color: var(--beige);
-}
-
-/* ___________________________ font ___________________________ */
-h1 {
-  font-family: "ital", sans-serif;
-}
-
-p {
-  font-family: "Lato", sans-serif;
-}
-
-/* Breadcrumb start */
-/* Style the list */
-ul.breadcrumb {
-  padding: 10px 16px;
-  list-style: none;
-}
-
-/* Display list items side by side */
-ul.breadcrumb li {
-  display: inline;
-  font-size: 1rem;
-}
-
-/* Add a slash symbol (/) before/behind each list item */
-ul.breadcrumb li + li:before {
-  padding: 8px;
-  color: var(--brun);
-  content: "/\00a0";
-}
-
-/* Add a color to all links inside the list */
-ul.breadcrumb li a {
-  color: var(--brun);
-  text-decoration: none;
-  font-size: 0.6rem;
-  font-family: "Lato", sans-serif;
-}
-
-ul.breadcrumb li a:hover {
-  color: red;
-  text-decoration: none;
-}
-/* Breadcrumb slut */
-
-/**-----------------------Rose-----------------------**/
-
-/* tilføj til generel css */
-p {
-  line-height: 1.5;
-}
 .overskift2 {
   line-height: 2;
 }
-/* *---------------------------* */
-
 /* produkt_kasse1  */
 .overskift1 {
-  color: #302718;
+  color: var(--brun);
   line-height: 2;
 }
 
@@ -99,13 +36,17 @@ p {
 /* produkt_kasse2  */
 
 .produkt_kasse2 {
-  background-color: #302718;
+  background-color: var(--brun);
   color: #fcf2e8;
   margin-bottom: 10%;
   margin-top: 10%;
   padding: 4%;
 }
 
+.produkt_kasse2 h2,
+.produkt_kasse2 p {
+  color: var(--beige);
+}
 .produkt_img2 {
   float: right;
   margin-top: 25%;
