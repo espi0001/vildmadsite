@@ -33,8 +33,26 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 })
 
-// function elementHover () {
+document.addEventListener('DOMContentLoaded', function () {
+  const gridChildren = document.querySelectorAll('.grid_child')
 
-//   document.querySelectorAll('.grid_child').forEach.
+  gridChildren.forEach(function (child) {
+    child.addEventListener('mouseenter', function () {
+      toggleBiotypesVisibility(child, true)
+    })
 
-// }
+    child.addEventListener('mouseleave', function () {
+      toggleBiotypesVisibility(child, false)
+    })
+  })
+
+  function toggleBiotypesVisibility (element, isHovered) {
+    const biotypesElement = element.querySelector('.biotypes_svg')
+
+    if (isHovered) {
+      biotypesElement.style.display = 'block'
+    } else {
+      biotypesElement.style.display = 'none'
+    }
+  }
+})

@@ -229,7 +229,7 @@ article h1 {
   }
 
   .bobbel h2 {
-    color: white;
+    color: var(--font_hvid);
     text-align: center;
     margin-top: 20%;
     transform: rotate(-10deg);
@@ -239,10 +239,12 @@ article h1 {
 
   .biotypes_svg {
     display: none;
-  }
-
-  .biotypes_svg_hover {
     color: var(--font_hvid);
+    font-family: "Tinos", sans-serif;
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+    margin: auto;
   }
 
   .interactive_grid_child_1 {
