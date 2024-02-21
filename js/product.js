@@ -19,17 +19,3 @@ function dataReceived (data) {
 
   data.forEach(showProduct)
 }
-
-function showProduct (product) {
-  const template = document.querySelector('template').content
-  const copy = template.cloneNode(true)
-
-  //   copy.querySelector('.biotype').textContent = product.biotype
-
-  copy.querySelector('.productId').textContent = product.productId
-  copy.querySelector('#productTitle').textContent = product.productTitle
-
-  copy.querySelector('.biotypeImg').src = product.productImg
-
-  document.querySelector('.jsList').appendChild(copy)
-}
