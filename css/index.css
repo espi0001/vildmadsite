@@ -72,69 +72,6 @@ img {
   text-transform: uppercase;
   font-size: 1.5rem;
 }
-/* .openland_child {
-  background-image: url(/image/3_openland.svg);
-  background-repeat: no-repeat;
-  grid-column: 1/2;
-  grid-row: 1/2;
-  position: relative;
-  aspect-ratio: 1920/1080;
-
-  margin-top: 10%;
-}
-
-.forrest_child {
-  background-image: url(/image/2_forrest.svg);
-  background-repeat: no-repeat;
-  grid-column: 2/3;
-  grid-row: 1/2;
-  position: relative;
-  object-fit: cover;
-  aspect-ratio: 1920/1080;
-  margin-top: 10%;
-}
-
-.ramme1 {
-  position: relative;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1920/1080;
-}
-
-.ramme2 {
-  position: relative;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1920/1080;
-}
-
-.titel1 {
-  position: absolute;
-  z-index: 1000;
-  margin: auto;
-  width: 40%;
-  top: 40%;
-  left: 30%;
-  text-align: center;
-  color: var(--beige);
-  border: solid 4px var(--beige);
-  text-transform: uppercase;
-  font-size: 1.5rem;
-}
-
-.titel2 {
-  position: absolute;
-  z-index: 1000;
-  margin: auto;
-  width: 40%;
-  top: 40%;
-  left: 30%;
-  text-align: center;
-  color: var(--beige);
-  border: solid 4px var(--beige);
-  text-transform: uppercase;
-  font-size: 1.5rem;
-} */
 
 .link-button {
   margin-top: 40px;
@@ -152,6 +89,7 @@ img {
   border: 2px solid var(--grøn);
   color: var(--grøn);
 }
+
 /* ___________________________ TABLET  ___________________________*/
 @media screen and (min-width: 768px) {
   .overskrift1 {

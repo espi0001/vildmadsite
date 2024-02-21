@@ -83,6 +83,7 @@ p {
   z-index: 101;
   font-size: 2rem;
 }
+
 /* ___________________________ TABLET  ___________________________*/
 @media screen and (min-width: 768px) {
   .jsList {
