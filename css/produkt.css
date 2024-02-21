@@ -57,7 +57,7 @@
 
 /* produkt_kasse3  */
 .produkt_kasse3 {
-  border: 2px solid #b03711;
+  border: 2px solid var(--rødbrun);
   margin-bottom: 10%;
   margin: 4%;
   padding: 5%;
@@ -129,13 +129,15 @@
 }
 /* *-----------------------------------------* */
 
-/**********************************************************---*desktop--------------************************************************/
-
-@media screen and (min-width: 800px) {
-  .overskift1 {
-    font-size: 2.8rem;
+/* ___________________________ TABLET  ___________________________*/
+@media screen and (min-width: 768px) {
+  .liste {
+    font-size: 1.2rem;
   }
+}
 
+/* ___________________________ DESKTOP  ___________________________*/
+@media screen and (min-width: 1024px) {
   .produkt_kasse1 {
     margin: 4% 8% 4% 8%;
   }
@@ -166,15 +168,14 @@
     gap: 39px;
   }
   .produkt_kasse2 {
-    background-color: #302718;
-    color: #fcf2e8;
+    background-color: var(--brun);
     padding: 4%;
     margin-bottom: 0%;
     margin-top: 0%;
   }
 
   .produkt_kasse3 {
-    border: 2px solid #b03711;
+    border: 2px solid var(--rødbrun);
     margin-bottom: 5%;
     padding: 5%;
     margin-top: 25%;
@@ -189,7 +190,7 @@
   }
 
   .cirkel-seson {
-    background-color: #00ab41;
+    background-color: var(--grøn);
     border-radius: 50%;
     width: 50%;
     height: 50%;
@@ -199,7 +200,7 @@
     justify-content: center;
   }
   .cirkel-seson > h3 {
-    color: white;
+    color: var(--beige);
     margin: 0;
     font-family: "Lato", sans-serif;
     font-size: 27px;
