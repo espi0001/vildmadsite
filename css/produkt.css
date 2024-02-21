@@ -143,8 +143,6 @@ p {
 .produkt_kasse5 {
   margin-top: 10%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
   margin: 4%;
 }
 
@@ -155,10 +153,9 @@ p {
 }
 
 .level_produkt {
-  margin-top: 6%;
-  padding: 10%;
-  display: grid;
-  grid-column: 2;
+  width: 50%;
+  align-self: end;
+  justify-self: center;
 }
 
 /* *-----------------------------------------* */
@@ -210,10 +207,9 @@ p {
   }
   .produkt_img1 {
     border-radius: 100%;
-    width: 350px;
-    height: 350px;
-    margin-left: 35%;
-    margin-top: -70px;
+    width: 400px;
+    height: 400px;
+    justify-self: center;
   }
 
   .tekst1 {
@@ -248,19 +244,42 @@ p {
 
   .produkt_4_produkt_5 {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     margin: 4% 8% 4% 8%;
   }
 
-  .img2_produktkasse5 {
-    display: grid;
-    grid-column: 2;
-    width: 60%;
-    margin-left: 17%;
+  .cirkel-seson {
+    background-color: #00ab41;
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+    transform: translate(20px, -156px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cirkel-seson > h3 {
+    color: white;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    font-size: 27px;
   }
 
-  .produkt_img3 {
-    border-radius: 100%;
+  .produkt_kasse5 {
+    display: grid;
+  }
+
+  .produkt_kasse5 > * /* jeg tager fat i alle elementerne inde i kassen */ {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: end;
+  }
+
+  .level_produkt {
+    width: 25%;
+    align-self: end;
+    justify-self: center;
+    transform: translateY(60px);
   }
 
   /* produkt 6 og 7  */
@@ -274,11 +293,7 @@ p {
   }
 
   .overskift_produktkasse6 {
-    display: grid;
-    grid-column: 2;
-    grid-row: 1;
     line-height: 2;
-    padding: 2%;
   }
 
   .produkt_kasse6 {
@@ -290,7 +305,7 @@ p {
     padding: 2%;
   }
 
-  .img_produktkasse6 {
+  .produkt_kasse7 {
     display: grid;
     grid-column: 1;
     grid-row: 1;
@@ -305,22 +320,18 @@ p {
     align-self: center;
   }
 
-  .produkt_kasse7 {
-    display: grid;
-    grid-column: 1;
-    margin: 4%;
-    margin-top: 0%;
-  }
   .overskrift_produktkasse7 {
     display: flex;
-    align-self: center;
+    justify-content: center;
+    transform: translateY(37px);
   }
 
   .img_produktkasse7 {
     display: flex;
     gap: 10px;
-    width: 48%;
+    width: 36%;
     justify-content: center;
     margin: 0 auto;
+    transform: translateY(40px);
   }
 }
