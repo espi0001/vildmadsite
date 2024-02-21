@@ -22,6 +22,8 @@ function dataReceived (data) {
 
 function showSingleProduct (singleProduct) {
   document.querySelector('.overskift1').textContent = singleProduct.productTitle
+  document.querySelector('.tekst1 span').textContent =
+    singleProduct.productTitle
 
   document.querySelector('.produkt_img1').src = singleProduct.productImg
 }
