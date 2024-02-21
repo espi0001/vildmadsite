@@ -32,3 +32,9 @@ document.addEventListener('DOMContentLoaded', function () {
     window.location.href = `produktliste.html?Urlinfo=${category}`
   }
 })
+
+// function elementHover () {
+
+//   document.querySelectorAll('.grid_child').forEach.
+
+// }

@@ -237,6 +237,14 @@ article h1 {
     font-weight: 900;
   }
 
+  .biotypes_svg {
+    display: none;
+  }
+
+  .biotypes_svg_hover {
+    color: var(--font_hvid);
+  }
+
   .interactive_grid_child_1 {
     position: relative;
     grid-column: 1/2;
