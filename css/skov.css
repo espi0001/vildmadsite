@@ -253,7 +253,7 @@ article h1 {
   .interactive_grid_child_1:hover {
     animation: wobble-hor-bottom-1 1 both;
     cursor: pointer;
-    filter: drop-shadow(3px 5px 10px rgb(0 0 0 / 0.9));
+    filter: drop-shadow(3px 5px 10px rgb(0 0 0 / 0.5));
   }
 
   @keyframes wobble-hor-bottom-1 {
@@ -267,7 +267,7 @@ article h1 {
   .interactive_grid_child_2:hover {
     animation: wobble-hor-bottom-2 1 both;
     cursor: pointer;
-    filter: drop-shadow(3px 5px 10px rgb(0 0 0 / 0.9));
+    filter: drop-shadow(3px 5px 10px rgb(0 0 0 / 0.5));
   }
 
   @keyframes wobble-hor-bottom-2 {
@@ -281,7 +281,7 @@ article h1 {
   .interactive_grid_child_3:hover {
     animation: wobble-hor-bottom-3 1 both;
     cursor: pointer;
-    filter: drop-shadow(3px 5px 10px rgb(0 0 0 / 0.9));
+    filter: drop-shadow(3px 5px 10px rgb(0 0 0 / 0.5));
   }
 
   @keyframes wobble-hor-bottom-3 {
@@ -295,7 +295,7 @@ article h1 {
   .interactive_grid_child_4:hover {
     animation: wobble-hor-bottom-4 1 both;
     cursor: pointer;
-    filter: drop-shadow(3px 5px 10px rgb(0 0 0 / 0.9));
+    filter: drop-shadow(3px 5px 10px rgb(0 0 0 / 0.5));
   }
 
   @keyframes wobble-hor-bottom-4 {
