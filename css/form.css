@@ -1,37 +1,70 @@
-body {
-  background-color: var(--beige);
-  color: #fff;
-  justify-content: center;
-  text-align: center;
+.form_container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: var(--grøn);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#form {
-  background-color: rgb(0, 171, 65);
-  margin-top: 5vh;
-  padding: 5vh;
-  margin: 5vh;
+form {
+  margin-top: 20px;
 }
-
 h1 {
-  color: #fff;
+  color: var(--brun);
+  font-size: 1.7rem;
+  margin-left: 10px;
+}
+h2 {
+  color: var(--beige);
   border: 2px solid;
   padding: 10px;
-  font-size: 16px;
+  font-size: 1.3rem;
   width: fit-content;
   height: fit-content;
   margin: auto;
 }
 
-#container {
-  display: flex;
-  align-items: center;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: rgb(136, 185, 129);
-  margin: 2vh;
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--beige);
+  font-family: "Lato", sans-serif;
 }
 
-#container2 {
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #aecc9f;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--rødbrun);
+  color: var(--beige);
+}
+
+/* .container {
+  display: flex;
+  align-items: center;
+  background-color: rgb(136, 185, 129);
+  margin: 0.5rem;
+}
+
+.container2 {
   background-color: rgb(0, 171, 65);
   margin-top: 5vh;
   padding: 20px;
@@ -41,11 +74,17 @@ h1 {
 .sign {
   display: flex;
   align-items: center;
-  margin: 2vh;
 }
 
 .sign p {
-  margin-right: 10vh;
+  color: var(--beige);
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
 }
 
 .log_in {
@@ -56,27 +95,24 @@ h1 {
 
 .sign img {
   width: 50px;
-  margin: 2vh;
 }
 
 .sign a,
 .account a {
   text-decoration: none;
-  color: #fff;
 }
 
 #login-form-container {
   display: none;
   background-color: rgb(0, 171, 65);
-  margin: 5vh;
-  padding: 5vh;
+  margin: 2rem;
+  padding: 2rem;
 }
 
 #login-form h1 {
   color: #fff;
   border: 2px solid;
   padding: 10px;
-  font-size: 16px;
   width: fit-content;
   height: fit-content;
   margin: auto;
@@ -98,26 +134,29 @@ h1 {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+} */
+
+/* ___________________________ TABLET  ___________________________*/
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  .form_container {
+    padding: 30px;
+  }
 }
 
-@media (min-width: 800px) {
-  #form {
-    background-color: rgb(0, 171, 65);
-    margin-top: 5vh;
-    padding: 5vh;
-    margin: 20vh;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+/* ___________________________ DESKTOP  ___________________________*/
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 2.5rem;
   }
-
-  #container2 {
-    background-color: rgb(0, 171, 65);
-    margin-top: 5vh;
-    padding: 20px;
-    margin: 20vh;
-    margin-top: 5vh;
+  h2 {
+    font-size: 2rem;
   }
-
   #login-form input[type="email"],
   #login-form input[type="password"],
   #login-form button[type="submit"] {
