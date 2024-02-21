@@ -1,6 +1,5 @@
 const urlParams = new URLSearchParams(window.location.search)
 const urlInfo = urlParams.get('Urlinfo')
-console.log(urlInfo)
 
 const url = `https://irsycvwaapqcapcnbgra.supabase.co/rest/v1/vildereMadCsv?productId=eq.${urlInfo}`
 
@@ -15,15 +14,22 @@ fetch(url, {
   .then(dataReceived)
 
 function dataReceived (data) {
-  console.log('Her kommer data: ', data)
-
   data.forEach(showSingleProduct)
 }
 
 function showSingleProduct (singleProduct) {
+  document.querySelector(
+    '.breadcrumb_back'
+  ).href = `produktliste.html?Urlinfo=${singleProduct.biotype}`
+
   document.querySelector('.overskift1').textContent = singleProduct.productTitle
   document.querySelector('.tekst1 span').textContent =
     singleProduct.productTitle
+
+  document.querySelector('.overskift_produktkasse6').textContent =
+    singleProduct.productTitle
+
+  document.querySelector('.text span').textContent = singleProduct.productTitle
 
   document.querySelector('.produkt_img1').src = singleProduct.productImg
 }
