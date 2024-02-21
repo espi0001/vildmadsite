@@ -17,11 +17,11 @@ fetch(url, {
 function dataReceived (data) {
   console.log('Her kommer data: ', data)
 
-  data.forEach(showProduct)
+  data.forEach(showSingleProduct)
 }
 
 function showSingleProduct (singleProduct) {
-  document.querySelector('h2').textContent = singleProduct.productTitle
+  document.querySelector('.overskift1').textContent = singleProduct.productTitle
 
-  document.querySelector('######').src = product.productImg
+  document.querySelector('.produkt_img1').src = singleProduct.productImg
 }
