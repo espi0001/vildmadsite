@@ -1,3 +1,12 @@
+html {
+  --beige: #fcf2e8;
+  --grøn: #00ab41;
+  --brun: #302718;
+  --rødbrun: #b03711;
+  --font_sort: #000000;
+  --font_hvid: #ffffff;
+}
+
 /* _____________________________________________________Mobile_______________________________________________________ */
 
 section {
@@ -16,13 +25,23 @@ section {
   aspect-ratio: 1920/1080;
 }
 
+.goBack {
+  color: var(--font_hvid);
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+  font-size: 0.5rem;
+  margin: 10px;
+  text-decoration: none;
+  text-shadow: none;
+}
+
 .bobbel {
   grid-column: 1/2;
   grid-row: 1/2;
 }
 
 .bobbel h2 {
-  color: white;
+  color: var(--font_hvid);
   text-align: center;
   margin-top: 20%;
   transform: rotate(-10deg);
@@ -191,6 +210,16 @@ article h1 {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     aspect-ratio: 1920/1080;
+  }
+
+  .goBack {
+    color: var(--font_hvid);
+    font-family: "Lato", sans-serif;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin: 10px;
+    text-decoration: none;
+    text-shadow: none;
   }
 
   .bobbel {

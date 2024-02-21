@@ -20,12 +20,26 @@ links.forEach(link => {
   })
 })
 
-figurElements.forEach(figur => {
-  logo.addEventListener('mouseenter', () => {
-    figur.style.display = 'block' // Change display to block on hover
-  })
+function updateFigurVisibility () {
+  if (window.innerWidth >= 800) {
+    figurElements.forEach(figur => {
+      logo.addEventListener('mouseenter', () => {
+        figur.style.display = 'block'
+      })
 
-  logo.addEventListener('mouseleave', () => {
-    figur.style.display = 'none' // Change display back to none on mouse leave
-  })
-})
+      logo.addEventListener('mouseleave', () => {
+        figur.style.display = 'none'
+      })
+    })
+  } else {
+    logo.addEventListener('mouseenter', () => {
+      figurElements.forEach(figur => {
+        figur.style.display = 'none'
+      })
+    })
+  }
+}
+
+updateFigurVisibility()
+
+window.addEventListener('resize', updateFigurVisibility)

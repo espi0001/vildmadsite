@@ -138,6 +138,13 @@ nav {
     margin-right: 20px;
   }
 
+  ._figur,
+  ._2figur,
+  ._3figur,
+  ._4figur {
+    display: none;
+  }
+
   .burger {
     display: block;
   }
