@@ -1,5 +1,5 @@
 .form_container {
-  max-width: 500px;
+  max-width: 400px;
   margin: 50px auto;
   padding: 20px;
   background-color: var(--grøn);
@@ -45,7 +45,7 @@ textarea {
 input[type="submit"] {
   width: 100%;
   padding: 10px;
-  background-color: #aecc9f;
+  background-color: var(--lysegrøn);
   color: #fff;
   border: none;
   border-radius: 3px;
@@ -57,102 +57,30 @@ input[type="submit"]:hover {
   color: var(--beige);
 }
 
-/* .container {
-  display: flex;
-  align-items: center;
-  background-color: rgb(136, 185, 129);
-  margin: 0.5rem;
-}
-
-.container2 {
-  background-color: rgb(0, 171, 65);
-  margin-top: 5vh;
-  padding: 20px;
-  margin: 5vh;
-}
-
-.sign {
-  display: flex;
-  align-items: center;
-}
-
-.sign p {
-  color: var(--beige);
-  text-decoration: none;
-}
-a {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: none;
-}
-
-.log_in {
-  color: rgb(158, 38, 38);
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.sign img {
-  width: 50px;
-}
-
-.sign a,
-.account a {
-  text-decoration: none;
-}
-
-#login-form-container {
-  display: none;
-  background-color: rgb(0, 171, 65);
-  margin: 2rem;
-  padding: 2rem;
-}
-
-#login-form h1 {
-  color: #fff;
-  border: 2px solid;
-  padding: 10px;
-  width: fit-content;
-  height: fit-content;
-  margin: auto;
-}
-
-#login-form input[type="email"],
-#login-form input[type="password"] {
-  margin: 1vh;
-  padding: 8px;
-  width: 150px;
-  border: none;
-  border-radius: 5px;
-}
-
-#login-form button[type="submit"] {
-  background-color: #fff;
-  color: rgb(0, 171, 65);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-} */
-
 /* ___________________________ TABLET  ___________________________*/
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 2rem;
+    text-align: center;
+    margin-left: 0px;
   }
   h2 {
     font-size: 1.8rem;
   }
   .form_container {
+    max-width: 500px;
     padding: 30px;
   }
 }
 
 /* ___________________________ DESKTOP  ___________________________*/
 @media screen and (min-width: 1024px) {
+  main {
+    max-width: 1400px;
+  }
   h1 {
     font-size: 2.5rem;
+    text-align: left;
   }
   h2 {
     font-size: 2rem;
