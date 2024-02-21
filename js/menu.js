@@ -4,7 +4,9 @@ const menu = document.querySelector('.menu')
 const links = document.querySelectorAll('.menu li a')
 const logo = document.getElementById('logo_svg')
 const header = document.querySelector('header')
-const figur = document.querySelector('.figur')
+const figurElements = document.querySelectorAll(
+  '._figur, ._2figur, ._3figur, ._4figur'
+)
 
 burger.addEventListener('click', () => {
   burger.classList.toggle('active')
@@ -18,10 +20,12 @@ links.forEach(link => {
   })
 })
 
-logo.addEventListener('mouseenter', () => {
-  figur.style.display = 'block' // Change display to block on hover
-})
+figurElements.forEach(figur => {
+  logo.addEventListener('mouseenter', () => {
+    figur.style.display = 'block' // Change display to block on hover
+  })
 
-logo.addEventListener('mouseleave', () => {
-  figur.style.display = 'none' // Change display back to none on mouse leave
+  logo.addEventListener('mouseleave', () => {
+    figur.style.display = 'none' // Change display back to none on mouse leave
+  })
 })

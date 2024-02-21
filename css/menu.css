@@ -23,14 +23,39 @@ header {
   z-index: 10;
 }
 
-.figur {
-  position: relative;
+._figur {
   background-image: url(/image/SVG/shroomAsset5.svg);
   aspect-ratio: 261.55/267;
   width: 80px;
   height: auto;
-  transform: translateX(-520%) translateY(-60%) rotate(15deg);
-  z-index: 1;
+  transform: translateX(-180%) translateY(-60%) rotate(25deg);
+  display: none;
+}
+
+._2figur {
+  background-image: url(/image/SVG/bushAsset4.svg);
+  aspect-ratio: 314.09/386.63;
+  width: 5%;
+  height: auto;
+  transform: translateX(-630%) translateY(-60%) rotate(-15deg);
+  display: none;
+}
+
+._3figur {
+  background-image: url(/image/SVG/treeAsset3.svg);
+  aspect-ratio: 454.8 /537.09;
+  width: 5%;
+  height: auto;
+  transform: translateX(-720%) translateY(40%) rotate(40deg);
+  display: none;
+}
+
+._4figur {
+  background-image: url(/image/SVG/herbsAsset2.svg);
+  aspect-ratio: 444.78/490.16;
+  width: 5%;
+  height: auto;
+  transform: translateX(-1140%) translateY(40%) rotate(-40deg);
   display: none;
 }
 
