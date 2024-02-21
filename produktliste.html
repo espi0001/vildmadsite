@@ -21,8 +21,8 @@
     <meta name="robots" content="noindex, nofollow">
 
     <!-- fa-icon -->
-    <link rel="icon" href="logo/logo.webp" type="image/x-icon">
-    <link rel="shortcut icon" href="logo/logo.webp" type="image/x-icon">
+    <link rel="icon" href="/image/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/image/logo.png" type="image/x-icon">
 
     <!-- FONTE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,18 +45,21 @@
             <a href="index.html"><img id="logo_svg" src="/image/logo.png" alt="logo"></a>
         </div>
         <nav>
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="/html/skov.html">Forrest</a></li>
-                <li><a href="#">Open land</a></li>
-            </ul>
             <div class="bruger">
-                <li>
-                    <a href="/form.html">
-                        <img src="/image/form_bruger.svg" alt="bruger">
-                    </a>
-                </li>
+                <a href="/form.html">
+                    <img src="/image/menu_bruger.svg" alt="bruger">
+                </a>
             </div>
+            <ul class="menu">
+                <li class="bruger_icon"><a href="/form.html"><img src="/image/menu_bruger.svg" alt="bruger"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skov.html">Forrest</a></li>
+                <li><a href="#">Open land</a></li>
+                <li class="search"><a href="#">Search</a>
+                </li>
+
+            </ul>
+
             <div class="burger">
                 <div class="line"></div>
                 <div class="line"></div>
@@ -64,7 +67,6 @@
             </div>
         </nav>
     </header>
-
 
 
 
@@ -79,26 +81,18 @@
 
 
         <h1 class="biotype">Biotype</h1>
-
+        <p>Here are the list of the this biotype in the forrest</p>
         <section class="jsList">
-
         </section>
-
 
         <template>
             <article class="biotypeProduct">
                 <h2 class="productId"></h2>
                 <!-- <img class="biotypeRamme" src="/image/ramme1.svg" alt="ramme"> -->
                 <img class="biotypeImg" src="" alt="billede af biotype">
-
-
-
                 <a id="productTitle" href="produkt.html" class="link-button"></a>
             </article>
         </template>
-
-
-
 
         <section class="types">
             <h2>Different types in the Forrest</h2>
@@ -163,6 +157,7 @@
             </div>
         </div>
     </footer>
+
     <script src="/js/script.js"></script>
     <script src="/js/menu.js"></script>
     <script src="/js/productlist.js"></script>
