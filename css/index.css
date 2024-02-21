@@ -28,6 +28,11 @@
   max-width: 1400px;
   margin: auto;
 }
+
+.openland,
+.forrest {
+  margin-top: 20px;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -169,25 +174,13 @@ img {
 /* ________________________________desktop______________________________ */
 
 @media screen and (min-width: 1024px) {
-  /* .forside {
-    background-image: url(/image/1_background.png);
-    aspect-ratio: 16/9;
-    width: 100%;
-    object-fit: cover;
-    margin-bottom: 30px;
-    background-repeat: no-repeat;
-  } */
+  .openland,
+  .forrest {
+    margin-top: 40px;
+  }
 
   .overskrift1 {
     font-size: 4rem;
-  }
-
-  .kategorier_grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%;
-    grid-gap: 10px;
-    margin: 30px 0 20px 0;
   }
 
   .titel1 {

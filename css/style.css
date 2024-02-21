@@ -64,6 +64,10 @@ a:hover {
 }
 
 /* ___________________________ Breadcrumb ___________________________ */
+.active {
+  color: #30271893;
+}
+
 /* Style the list */
 ul.breadcrumb {
   margin: 20px 10px 10px 10px;
@@ -92,12 +96,8 @@ ul.breadcrumb li a {
 }
 
 ul.breadcrumb li a:hover {
-  color: red;
+  color: var(--grøn);
   text-decoration: none;
-}
-
-ul.breadcrumb li .biotypeSti a {
-  color: #30271893;
 }
 
 /* __________________________ footer __________________________ */
@@ -197,6 +197,12 @@ footer p {
   .footer_logo img {
     width: 35%;
     height: auto;
+  }
+
+  /* ___________________________ Breadcrumb ___________________________ */
+  /* Add a color to all links inside the list */
+  ul.breadcrumb li a {
+    font-size: 0.8rem;
   }
 }
 
