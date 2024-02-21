@@ -13,7 +13,15 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-
+.overskift2,
+.overskift_produktkasse6 {
+  text-transform: uppercase;
+}
+.knap {
+  list-style: none;
+  color: var(--brun);
+  margin-top: 10px;
+}
 .tekst1 {
   margin-bottom: 8%;
 }
@@ -141,15 +149,85 @@
     font-size: 1.2rem;
   }
 
+  .produkt_kasse1-1 {
+    display: grid;
+  }
+  .overskift1 {
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+  .tekst1 {
+    grid-column: 1/3;
+    margin-bottom: 0%;
+    grid-row: 2/3;
+  }
+
+  .produkt_img1 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .produkt_kasse2 {
+    padding: 2rem;
+    margin: 1rem;
+  }
+  .produkt_img2 {
+    float: right;
+    margin-top: 11px;
+    width: 16%;
+    margin-right: 12px;
+  }
   /* produkt_kasse3  */
   .produkt_kasse3 {
-    margin: 2rem;
     padding: 2rem;
+    margin-inline: 1rem;
+    padding-right: 4rem;
+  }
+  .produkt_kasse4 {
+    margin-inline: 3rem;
+  }
+  /* dish */
+
+  .produkt_kasse5 {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  .produkt_img3 {
+    width: 40%;
+  }
+  .cirkel-seson {
+    display: none;
+  }
+  .level_produkt {
+    width: 20%;
+    align-self: center;
+  }
+  .produkt_kasse7 {
+    display: grid;
+  }
+  .produkt_img4 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .overskrift_produktkasse {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .img_produktkasse7 {
+    grid-column: 2/3;
+    grid-row: 1/2;
   }
 }
 
 /* ___________________________ DESKTOP  ___________________________*/
 @media screen and (min-width: 1024px) {
+  .knap a {
+    list-style: none;
+    color: var(--brun);
+    font-size: 1.2rem;
+  }
+
   .grid_produkt {
     margin: auto;
   }
@@ -202,7 +280,7 @@
   .produkt_kasse3 {
     border: 2px solid var(--rødbrun);
     margin-bottom: 1rem;
-    padding: 1rem;
+    padding: 2rem;
   }
 
   /* produkt 4 og 5 */
