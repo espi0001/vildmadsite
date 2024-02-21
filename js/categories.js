@@ -1,8 +1,7 @@
-// Wait for the DOM content to be fully loaded
 document.addEventListener('DOMContentLoaded', function () {
-  // Select elements with the classes '.grid_child' and '.elements_names_link'
+  // Select elements with the classes '.grid_child' and '.elements_names a'
   const gridChildren = document.querySelectorAll('.grid_child')
-  const elementsNamesLinks = document.querySelectorAll('.elements_names_link')
+  const elementsNamesLinks = document.querySelectorAll('.elements_names a')
 
   // Add a click event listener to each '.grid_child' element
   gridChildren.forEach(function (child, index) {
@@ -11,14 +10,20 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   })
 
-  // Add a click event listener to each '.elements_names_link' element
+  // Add a click event listener to each '.elements_names a' element
   elementsNamesLinks.forEach(function (link, index) {
     link.addEventListener('click', function () {
-      handleElementClick(index)
+      handleLinkClick(link)
     })
   })
 
-  // Function to handle the click event for both types of elements
+  // Function to handle the click event for '.elements_names a' elements
+  function handleLinkClick (link) {
+    const category = link.getAttribute('data-category')
+    window.location.href = `produktliste.html?Urlinfo=${category}`
+  }
+
+  // Function to handle the click event for '.grid_child' elements
   function handleElementClick (index) {
     const categories = [
       'Herbs and smaller plants',
@@ -28,7 +33,6 @@ document.addEventListener('DOMContentLoaded', function () {
     ]
 
     const category = categories[index]
-
     window.location.href = `produktliste.html?Urlinfo=${category}`
   }
 })

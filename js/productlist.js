@@ -18,6 +18,10 @@ function dataReceived (data) {
   data.forEach(showProduct)
 }
 
+document.querySelector(
+  '.breadcrumb_back'
+).href = `produktliste.html?Urlinfo=${singleProduct.biotype}`
+
 function showProduct (product) {
   const template = document.querySelector('template').content
   const copy = template.cloneNode(true)
