@@ -28,6 +28,7 @@ section {
   transform: rotate(-10deg);
   font-size: 0.9rem;
   font-weight: 900;
+  text-shadow: black 0px 0px 10px;
 }
 
 .interactive_grid_child_1 {
