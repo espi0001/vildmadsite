@@ -1,65 +1,53 @@
+.produktliste {
+  max-width: 1400px;
+}
 h1 {
   color: var(--brun);
-  margin: 20px;
+  margin-left: 10px;
+}
+p {
+  margin-left: 10px;
 }
 
+.productId {
+  display: none;
+}
 .jsList {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* margin-left: 5%;
+  margin-right: 5%; */
+}
+
+.biotypeImg {
+  border-radius: 100%;
+  width: 100%;
+  padding: 10%;
 }
 
 .link-button {
   color: rgb(0, 171, 65);
   border: 2px solid;
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 10px 10px;
+  font-size: 1rem;
   background-color: transparent;
-  margin-top: 10px;
   align-items: center;
-}
-
-@media (min-width: 800px) {
-  .jsList {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-  article {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: auto;
-    align-content: center;
-    flex-wrap: nowrap;
-    align-items: center;
-  }
-
-  .productId {
-    display: none;
-  }
-
-  .biotypeImg {
-    border-radius: 100%;
-    width: 100%;
-    padding: 10%;
-  }
-
-  .link-button {
-    color: rgb(0, 171, 65);
-    border: 2px solid;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    background-color: transparent;
-    align-items: center;
-    width: 200px;
-    text-decoration: none;
-    text-align: center;
-  }
+  max-width: 210px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin: auto;
 }
 
 .types {
   text-align: center;
+  margin-top: 3.5rem;
+}
+
+.type_container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .types h2 {
@@ -90,10 +78,39 @@ h1 {
 .type2 p,
 .type3 p,
 .type4 p {
-  position: relative;
-  top: -30px;
   left: -1px;
   color: rgb(0, 171, 65);
   z-index: 101;
   font-size: 2rem;
+}
+/* ___________________________ TABLET  ___________________________*/
+@media screen and (min-width: 768px) {
+  .jsList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* ________________________________desktop______________________________ */
+@media screen and (min-width: 1024px) {
+  .jsList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .biotypeImg {
+    border-radius: 100%;
+    width: 100%;
+    padding: 10%;
+  }
 }
