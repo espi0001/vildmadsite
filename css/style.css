@@ -11,6 +11,7 @@ html {
   --grøn: #00ab41;
   --brun: #302718;
   --rødbrun: #b03711;
+  --lysegrøn: #aecc9f;
   --font_sort: #000000;
   --font_hvid: #ffffff;
 }
@@ -53,6 +54,10 @@ h2 {
 p {
   font-family: "Lato", sans-serif;
   color: var(--brun);
+  line-height: 1.5;
+  font-size: 1rem;
+  max-width: 65ch;
+  text-wrap: balance;
 }
 a {
   font-family: "Lato", sans-serif;
@@ -62,7 +67,6 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
 /* ___________________________ Breadcrumb ___________________________ */
 .active {
   color: #30271893;
