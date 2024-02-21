@@ -2,7 +2,7 @@ const urlParams = new URLSearchParams(window.location.search)
 const urlInfo = urlParams.get('Urlinfo')
 console.log(urlInfo)
 
-const url = `https://irsycvwaapqcapcnbgra.supabase.co/rest/v1/vildereMadCsv?biotype=eq.${urlInfo}`
+const url = `https://irsycvwaapqcapcnbgra.supabase.co/rest/v1/vildereMadCsv?productId=eq.${urlInfo}`
 
 fetch(url, {
   method: 'GET',

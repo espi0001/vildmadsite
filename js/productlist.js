@@ -2,7 +2,7 @@ const urlParams = new URLSearchParams(window.location.search)
 const urlInfo = urlParams.get('Urlinfo')
 console.log(urlInfo)
 
-const url = `https://irsycvwaapqcapcnbgra.supabase.co/rest/v1/vildereMadCsv?categories=${urlInfo}`
+const url = `https://irsycvwaapqcapcnbgra.supabase.co/rest/v1/vildereMadCsv?biotype=eq.${urlInfo}`
 
 fetch(url, {
   method: 'GET',
@@ -15,17 +15,16 @@ fetch(url, {
   .then(dataReceived)
 
 function dataReceived (data) {
-  data.forEach(showProductList)
+  data.forEach(showProduct)
 }
 
 function showProduct (product) {
   const template = document.querySelector('template').content
   const copy = template.cloneNode(true)
 
-  //   copy.querySelector('.biotype').textContent = product.biotype
-
   copy.querySelector('.productId').textContent = product.productId
   copy.querySelector('#productTitle').textContent = product.productTitle
+  copy.querySelector('a').href = `produkt.html?Urlinfo=${product.productId}`
 
   copy.querySelector('.biotypeImg').src = product.productImg
 
