@@ -45,7 +45,7 @@ section {
   text-align: center;
   margin-top: 20%;
   transform: rotate(-10deg);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 900;
   text-shadow: black 0px 0px 10px;
 }
@@ -202,10 +202,206 @@ article h1 {
   transition: 0.2s;
   text-decoration: underline;
 }
+/* ____________________________________________________________Tablet__________________________________________________________________________ */
+@media screen and (min-width: 768px) {
+  section {
+    position: relative;
+    z-index: 1;
+    background-image: url(/image/2_forrest.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .interactive_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    aspect-ratio: 1920/1080;
+  }
+
+  .goBack {
+    color: var(--font_hvid);
+    font-family: "Lato", sans-serif;
+    cursor: pointer;
+    font-size: 0.5rem;
+    margin: 10px;
+    text-decoration: none;
+    text-shadow: none;
+  }
+
+  .bobbel {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .bobbel h2 {
+    color: var(--font_hvid);
+    text-align: center;
+    margin-top: 20%;
+    transform: rotate(-10deg);
+    font-size: 0.8rem;
+    font-weight: 900;
+    text-shadow: black 0px 0px 10px;
+  }
+
+  .biotypes_svg {
+    display: none;
+    color: var(--font_hvid);
+    font-family: "Tinos", sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-align: center;
+    margin: auto;
+  }
+
+  .interactive_grid_child_1 {
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-image: url(/image/SVG/herbsAsset2.svg);
+    aspect-ratio: 444.78/490.16;
+    background-repeat: no-repeat;
+    margin-top: 50%;
+    transform: scale(0.8);
+  }
+
+  .interactive_grid_child_2 {
+    background-image: url(/image/SVG/bushAsset4.svg);
+    aspect-ratio: 314.09/386.63;
+    background-repeat: no-repeat;
+    position: relative;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    margin-top: 20%;
+    transform: scale(0.8);
+  }
+
+  .interactive_grid_child_3 {
+    background-image: url(/image/SVG/treeAsset3.svg);
+    aspect-ratio: 454.8 /537.09;
+    background-repeat: no-repeat;
+    position: relative;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: -10%;
+  }
+
+  .interactive_grid_child_4 {
+    background-image: url(/image/SVG/shroomAsset5.svg);
+    aspect-ratio: 261.55/267;
+    background-repeat: no-repeat;
+    position: relative;
+    grid-column: 4/5;
+    grid-row: 2/3;
+    margin-top: 60%;
+    transform: scale(0.8);
+  }
+
+  .interactive_grid_child_1:hover {
+    animation: wobble-hor-bottom-1 1 both;
+    cursor: pointer;
+    filter: drop-shadow(3px 5px 10px rgb(0 0 0 / 0.5));
+  }
+
+  @keyframes wobble-hor-bottom-1 {
+    0%,
+    100% {
+      transform: scale(0.9);
+      transform-origin: 50% 50%;
+    }
+  }
+
+  .interactive_grid_child_2:hover {
+    animation: wobble-hor-bottom-2 1 both;
+    cursor: pointer;
+    filter: drop-shadow(3px 5px 10px rgb(0 0 0 / 0.5));
+  }
+
+  @keyframes wobble-hor-bottom-2 {
+    0%,
+    100% {
+      transform: scale(0.9);
+      transform-origin: 50% 50%;
+    }
+  }
+
+  .interactive_grid_child_3:hover {
+    animation: wobble-hor-bottom-3 1 both;
+    cursor: pointer;
+    filter: drop-shadow(3px 5px 10px rgb(0 0 0 / 0.5));
+  }
+
+  @keyframes wobble-hor-bottom-3 {
+    0%,
+    100% {
+      transform: scale(1.1);
+      transform-origin: 50% 50%;
+    }
+  }
+
+  .interactive_grid_child_4:hover {
+    animation: wobble-hor-bottom-4 1 both;
+    cursor: pointer;
+    filter: drop-shadow(3px 5px 10px rgb(0 0 0 / 0.5));
+  }
+
+  @keyframes wobble-hor-bottom-4 {
+    0%,
+    100% {
+      transform: scale(0.9);
+      transform-origin: 50% 50%;
+    }
+  }
+  article {
+    text-align: center;
+  }
+  article h1 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .elementerne {
+    display: block;
+  }
+
+  .elements {
+    margin: 0 auto;
+    padding: 23px;
+    margin-inline: 140px;
+    color: var(--rødbrun);
+  }
+  .elements_ramme {
+    border: solid 2px var(--rødbrun);
+    padding: 40px;
+    padding-inline: initial;
+    align-items: center;
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  .elements_ramme a {
+    font-family: "lato", sans-serif;
+    font-size: 0.8rem;
+    color: var(--rødbrun);
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 20px;
+    text-align: center;
+  }
+
+  .elements_names {
+    display: grid;
+  }
+  .elements_ramme a:hover {
+    transition: 0.2s;
+    text-decoration: underline;
+  }
+}
 
 /* _____________________________________________________desktop_______________________________________________________ */
 
-@media only screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   section {
     position: relative;
     z-index: 1;
