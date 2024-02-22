@@ -22,6 +22,12 @@ function showSingleProduct (singleProduct) {
     '.breadcrumb_back'
   ).href = `produktliste.html?Urlinfo=${singleProduct.biotype}`
 
+  document.querySelector(
+    '.breadcrumb_back_2'
+  ).href = `produktliste.html?Urlinfo=${singleProduct.biotype}`
+  document.querySelector('.breadcrumb_back_2').textContent =
+    singleProduct.productTitle
+
   document.querySelector('.overskift1').textContent = singleProduct.productTitle
   document.querySelector('.tekst1 span').textContent =
     singleProduct.productTitle
