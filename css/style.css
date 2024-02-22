@@ -160,15 +160,15 @@ footer p {
 #goTop {
   position: sticky;
   bottom: 0;
-  margin-left: 10px;
+  margin-left: 98%;
   cursor: pointer;
-  color: #00000023;
+  color: #00000073;
 }
 
 #goTop:hover {
   position: sticky;
   bottom: 0;
-  margin-left: 10px;
+  margin-left: 98%;
   cursor: pointer;
   color: #000000;
 }
@@ -222,15 +222,16 @@ footer p {
   #goTop {
     position: sticky;
     bottom: 0;
-    margin-left: 10px;
+
     cursor: pointer;
-    color: #00000023;
+    margin-left: 98%;
+    color: #00000074;
   }
 
   #goTop:hover {
     position: sticky;
     bottom: 0;
-    margin-left: 10px;
+    margin-left: 98%;
     cursor: pointer;
     color: #000000;
   }
@@ -270,15 +271,15 @@ footer p {
   #goTop {
     position: sticky;
     bottom: 0;
-    margin-left: 10px;
+    margin-left: 98%;
     cursor: pointer;
-    color: #00000023;
+    color: #00000073;
   }
 
   #goTop:hover {
     position: sticky;
     bottom: 0;
-    margin-left: 10px;
+    margin-left: 98%;
     cursor: pointer;
     color: #000000;
   }
