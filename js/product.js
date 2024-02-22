@@ -29,7 +29,8 @@ function showSingleProduct (singleProduct) {
   document.querySelector('.overskift_produktkasse6').textContent =
     singleProduct.productTitle
 
-  document.querySelector('.text span').textContent = singleProduct.productTitle
+  document.querySelector('p .tekst1 span').textContent =
+    singleProduct.productTitle
 
   document.querySelector('.produkt_img1').src = singleProduct.productImg
 }
