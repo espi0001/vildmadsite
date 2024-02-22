@@ -1,7 +1,7 @@
 /* ________________________________mobil______________________________ */
 
 .forside {
-  background-image: url(/image/1_background2.svg);
+  background-image: url(image/1_background2.svg);
   aspect-ratio: 1600/500;
   width: 100%;
   object-fit: cover;

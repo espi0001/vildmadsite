@@ -24,7 +24,7 @@ header {
 }
 
 ._figur {
-  background-image: url(/image/SVG/shroomAsset5.svg);
+  background-image: url(image/SVG/shroomAsset5.svg);
   aspect-ratio: 261.55/267;
   width: 80px;
   height: auto;
@@ -33,7 +33,7 @@ header {
 }
 
 ._2figur {
-  background-image: url(/image/SVG/bushAsset4.svg);
+  background-image: url(image/SVG/bushAsset4.svg);
   aspect-ratio: 314.09/386.63;
   width: 5%;
   height: auto;
@@ -42,7 +42,7 @@ header {
 }
 
 ._3figur {
-  background-image: url(/image/SVG/treeAsset3.svg);
+  background-image: url(image/SVG/treeAsset3.svg);
   aspect-ratio: 454.8 /537.09;
   width: 5%;
   height: auto;
@@ -51,7 +51,7 @@ header {
 }
 
 ._4figur {
-  background-image: url(/image/SVG/herbsAsset2.svg);
+  background-image: url(image/SVG/herbsAsset2.svg);
   aspect-ratio: 444.78/490.16;
   width: 5%;
   height: auto;
