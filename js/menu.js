@@ -20,26 +20,26 @@ links.forEach(link => {
   })
 })
 
-function updateFigurVisibility () {
-  if (window.innerWidth >= 800) {
-    figurElements.forEach(figur => {
-      logo.addEventListener('mouseenter', () => {
-        figur.style.display = 'block'
-      })
+// function updateFigurVisibility () {
+//   if (window.innerWidth >= 800) {
+//     figurElements.forEach(figur => {
+//       logo.addEventListener('mouseenter', () => {
+//         figur.style.display = 'block'
+//       })
 
-      logo.addEventListener('mouseleave', () => {
-        figur.style.display = 'none'
-      })
-    })
-  } else {
-    logo.addEventListener('mouseenter', () => {
-      figurElements.forEach(figur => {
-        figur.style.display = 'none'
-      })
-    })
-  }
-}
+//       logo.addEventListener('mouseleave', () => {
+//         figur.style.display = 'none'
+//       })
+//     })
+//   } else {
+//     logo.addEventListener('mouseenter', () => {
+//       figurElements.forEach(figur => {
+//         figur.style.display = 'none'
+//       })
+//     })
+//   }
+// }
 
-updateFigurVisibility()
+// updateFigurVisibility()
 
-window.addEventListener('resize', updateFigurVisibility)
+// window.addEventListener('resize', updateFigurVisibility)
